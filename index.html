@@ -3,108 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe | Full Stack Developer</title>
+    <meta name="description" content="Carlo Untalan - Software Developer specializing in web development with PHP, MySQL, JavaScript, and CSS. View my portfolio and projects.">
+    <meta name="keywords" content="Carlo Untalan, Software Developer, Web Developer, PHP Developer, Portfolio, Web Development, Santa Rosa Laguna">
+    <meta name="author" content="Carlo Untalan">
+    <meta property="og:title" content="Carlo Untalan | Software Developer">
+    <meta property="og:description" content="Portfolio of Carlo Untalan, Software Developer specializing in web development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://carlo121603.github.io/CrlUntlnPortfolio/">
+    <meta name="robots" content="index, follow">
+    
+    <title>Carlo Untalan | Software Developer | Web Developer in Santa Rosa, Laguna</title>
+    <link rel="canonical" href="https://carlo121603.github.io/CrlUntlnPortfolio/" />
+    
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        :root {
-            --primary: #000000;
-            --secondary: #ffffff;
-            --accent: #3b82f6;
-            --accent-light: #93c5fd;
-            --gray: #4b5563;
-            --light-gray: #e5e7eb;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--primary);
-            background-color: var(--secondary);
-        }
-        
-        .nav-link:hover, .project-card:hover {
-            transform: translateY(-3px);
-            transition: all 0.3s ease;
-        }
-        
-        .skill-bar {
-            background-color: var(--light-gray);
-        }
-        
-        .skill-progress {
-            background-color: var(--accent);
-            height: 100%;
-        }
-
-        .skill-tag {
-            transition: all 0.3s ease;
-        }
-
-        .skill-tag:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .mobile-menu {
-            display: none;
-            position: fixed;
-            top: 68px; /* Adjust based on your nav height */
-            left: 0;
-            right: 0;
-            background-color: white;
-            padding: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 40;
-        }
-        
-        .mobile-menu.active {
-            display: block;
-        }
-        
-        .mobile-menu a {
-            display: block;
-            padding: 0.75rem 1rem;
-            margin: 0.25rem 0;
-            border-radius: 0.375rem;
-            color: #1f2937;
-            transition: all 0.3s ease;
-        }
-        
-        .mobile-menu a:hover {
-            background-color: #f3f4f6;
-            color: #3b82f6;
-        }
-        
-        /* Hamburger animation */
-        .hamburger {
-            transition: all 0.3s ease;
-        }
-        
-        .hamburger.active {
-            transform: rotate(90deg);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured data for better search engine understanding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Carlo Untalan",
+      "jobTitle": "Software Developer",
+      "url": "https://carlo121603.github.io/CrlUntlnPortfolio/",
+      "sameAs": [
+        "https://github.com/carlo121603",
+        "https://www.linkedin.com/in/carlountalan12",
+        "https://www.facebook.com/carlo.untalan.79/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santa Rosa",
+        "addressRegion": "Laguna",
+        "addressCountry": "Philippines"
+      },
+      "email": "mailto:untalancarlo1216@gmail.com",
+      "telephone": "+63 908-9147-126"
+    }
+    </script>
+    
 </head>
 <body>
     <!-- Navigation -->
     <nav class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-800">CU.</a>
+            <a href="#" class="text-2xl font-bold text-gray-800" aria-label="Carlo Untalan Portfolio Home">CU.</a>
             <div class="hidden md:flex space-x-8">
-                <a href="#home" class="nav-link text-gray-800 hover:text-blue-500">Home</a>
-                <a href="#about" class="nav-link text-gray-800 hover:text-blue-500">About</a>
-                <a href="#skills" class="nav-link text-gray-800 hover:text-blue-500">Skills</a>
-                <a href="#projects" class="nav-link text-gray-800 hover:text-blue-500">Projects</a>
-                <a href="#certifications" class="nav-link text-gray-800 hover:text-blue-500">Certifications</a>
-                <a href="#contact" class="nav-link text-gray-800 hover:text-blue-500">Contact</a>
+                <a href="#home" class="nav-link text-gray-800 hover:text-blue-500 focus:outline-none focus:ring-0 active:outline-none">Home</a>
+                <a href="#about" class="nav-link text-gray-800 hover:text-blue-500 focus:outline-none focus:ring-0 active:outline-none">About</a>
+                <a href="#skills" class="nav-link text-gray-800 hover:text-blue-500 focus:outline-none focus:ring-0 active:outline-none">Skills</a>
+                <a href="#projects" class="nav-link text-gray-800 hover:text-blue-500 focus:outline-none focus:ring-0 active:outline-none">Projects</a>
+                <a href="#certifications" class="nav-link text-gray-800 hover:text-blue-500 focus:outline-none focus:ring-0 active:outline-none">Certifications</a>
+                <a href="#contact" class="nav-link text-gray-800 hover:text-blue-500 focus:outline-none focus:ring-0 active:outline-none">Contact</a>
             </div>
-            <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <button id="menu-toggle" class="md:hidden focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false">
                 <i id="menu-icon" class="fas fa-bars text-gray-800 text-xl hamburger"></i>
             </button>
         </div>
         
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu md:hidden">
+        <div id="mobile-menu" class="mobile-menu md:hidden" aria-hidden="true">
             <a href="#home" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#skills" class="nav-link">Skills</a>
@@ -121,7 +80,7 @@
                 <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-500">Carlo Untalan</span></h1>
                 <h2 class="text-2xl md:text-3xl font-semibold mb-6">Software Developer</h2>
                 <p class="text-gray-600 mb-8 max-w-md">
-                    Committed about creating efficient, scalable, and responsive web applications.
+                    Committed to creating efficient, scalable, and responsive web applications with PHP, MySQL, and modern web technologies.
                 </p>
                 <div class="flex space-x-4">
                     <a href="#projects" class="bg-black text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 shadow-md">View My Work</a>
@@ -130,10 +89,8 @@
             </div>
             <div class="md:w-1/2 flex justify-center">
                 <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-200 rounded-full overflow-hidden border-4 border-blue-500">
-                    <!-- Placeholder for profile image -->
                     <div class="w-full h-full bg-gray-300 flex items-center justify-center">
-                        <!-- <i class="fas fa-user text-6xl text-gray-500"></i> -->
-                         <img src="Pictures/Profile.JPG" alt="Profile">
+                        <img src="Pictures/Profile.JPG" alt="Carlo Untalan - Software Developer" width="320" height="320" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -147,11 +104,7 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
                     <div class="w-48 h-48 bg-gray-200 rounded-lg overflow-hidden">
-                        <!-- Placeholder for about image -->
-                        <div class="w-full h-full bg-gray-300 flex items-center justify-center">
-                            <!-- <i class="fas fa-code text-5xl text-gray-500"></i> -->
-                             <img src="Pictures/Grad Pic.jpg" alt="Grad Pic">
-                        </div>
+                        <img src="Pictures/Grad Pic.jpg" alt="Carlo Untalan Graduation Photo" width="192" height="192" loading="lazy">
                     </div>
                 </div>
                 <div class="md:w-2/3 md:pl-12">
@@ -181,7 +134,7 @@
                         </div>
                     </div>
                     <div class="mt-8">
-                        <a href="Resume/Resume - Untalan, Carlo.pdf" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition" download>
+                        <a href="Resume/Resume - Untalan, Carlo.pdf" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition" download="Carlo_Untalan_Resume.pdf">
                             <i class="fas fa-download mr-2"></i> Download Resume
                         </a>
                     </div>
@@ -190,7 +143,6 @@
         </div>
     </section>
 
-   
     <!-- Skills Section -->
     <section id="skills" class="py-20">
         <div class="container mx-auto px-6">
@@ -284,10 +236,6 @@
             <div class="mt-12">
                 <h3 class="text-xl font-semibold mb-6 border-b-2 border-blue-500 pb-2 inline-block">Currently Learning</h3>
                 <div class="flex flex-wrap gap-4">
-                    <!-- <div class="bg-gray-100 px-4 py-2 rounded-full flex items-center border-2 border-blue-200">
-                        <i class="fab fa-react text-blue-500 mr-2"></i>
-                        <span>React.js</span>
-                    </div> -->
                     <div class="bg-gray-100 px-4 py-2 rounded-full flex items-center border-2 border-blue-200">
                         <i class="fas fa-wind text-blue-500 mr-2"></i>
                         <span>Tailwind CSS</span>
@@ -304,15 +252,14 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
-                        <!-- <i class="fas fa-laptop-code text-5xl text-gray-500"></i> -->
-                         <img src="images/g&b.png" alt="G&B">
+                        <img src="images/g&b.png" alt="Online Lending Platform by Carlo Untalan" width="400" height="192" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Online Lending Platform (Capstone Project)</h3>
                         <p class="text-gray-600 mb-4">
-                            Collaborated with <a href="https://www.facebook.com/nclnncvs" target="_blank" class="text-blue-500 hover:text-blue-700">Nicole Cuevas</a> to create a full-featured online lending platform built with Wordpress and customized php, javascript, and css codes.
+                            Collaborated with <a href="https://www.facebook.com/nclnncvs" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">Nicole Cuevas</a> to create a full-featured online lending platform built with Wordpress and customized php, javascript, and css codes.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
@@ -322,20 +269,16 @@
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">CSS</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#" class="text-blue-500 hover:text-blue-700">
-                                <!-- <i class="fab fa-github"></i> Code -->
-                            </a>
                             <a href="404.html" class="text-blue-500 hover:text-blue-700">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
-                        <!-- <i class="fas fa-laptop-code text-5xl text-gray-500"></i> -->
-                         <img src="images/RisingSun.png" alt="Rising Sun">
+                        <img src="images/RisingSun.png" alt="E-Commerce Website by Carlo Untalan" width="400" height="192" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">E-Commerce Website</h3>
@@ -350,25 +293,21 @@
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex space-x-3">
-                            <!-- <a href="#" class="text-blue-500 hover:text-blue-700">
-                                <i class="fab fa-github"></i> Code
-                            </a> -->
-                            <a href="https://www.anytime.asia/Rising%20Sun/index.php" target="_blank" class="text-blue-500 hover:text-blue-700">
+                            <a href="https://www.anytime.asia/Rising%20Sun/index.php" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
-                        <!-- <i class="fas fa-laptop-code text-5xl text-gray-500"></i> -->
-                         <img src="images/EBI.png" alt="EBI">
+                        <img src="images/EBI.png" alt="Custom Admin Panel by Carlo Untalan" width="400" height="192" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Custom Admin Panel for EBI Sub-Navigation</h3>
                         <p class="text-gray-600 mb-4">
-                            Developed a dynamic admin portal for <a href="https://neuralcoredev.com/EBI/act.php" target="_blank" class="text-blue-500 hover:text-blue-700">EBI’s</a> website, enabling real-time management of Career and Bulletin sub-navigation menus. This feature empowers administrators to easily add, edit, or remove entries without modifying the source code, streamlining content updates and improving scalability.
+                            Developed a dynamic admin portal for <a href="https://neuralcoredev.com/EBI/act.php" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">EBI's</a> website, enabling real-time management of Career and Bulletin sub-navigation menus.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
@@ -378,25 +317,21 @@
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex space-x-3">
-                            <!-- <a href="#" class="text-blue-500 hover:text-blue-700">
-                                <i class="fab fa-github"></i> Code
-                            </a> -->
-                            <a href="https://neuralcoredev.com/EBI/login.php" target="_blank" class="text-blue-500 hover:text-blue-700">
+                            <a href="https://neuralcoredev.com/EBI/login.php" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
-                        <!-- <i class="fas fa-laptop-code text-5xl text-gray-500"></i> -->
-                         <img src="images/expensetracker.png" alt="expense tracker">
+                        <img src="images/expensetracker.png" alt="Expense Tracker by Carlo Untalan" width="400" height="192" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Expense Tracker</h3>
                         <p class="text-gray-600 mb-4">
-                            A streamlined expense tracker application developed for personal use in automating the recording and management of monthly bills. Designed with a user-friendly interface and essential CRUD functionalities to enable efficient expense monitoring.
+                            A streamlined expense tracker application developed for personal use in automating the recording and management of monthly bills.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
@@ -405,7 +340,7 @@
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="https://github.com/carlo121603/Expense-Tracker" target="_blank" class="text-blue-500 hover:text-blue-700">
+                            <a href="https://github.com/carlo121603/Expense-Tracker" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">
                                 <i class="fab fa-github"></i> Code
                             </a>
                             <a href="#" class="text-blue-500 hover:text-blue-700">
@@ -413,12 +348,11 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
-                        <!-- <i class="fas fa-laptop-code text-5xl text-gray-500"></i> -->
-                         <img src="images/coffee.png" alt="Coffee Website">
+                        <img src="images/coffee.png" alt="Coffee Shop Website by Carlo Untalan" width="400" height="192" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">A Coffee Shop Website</h3>
@@ -432,21 +366,20 @@
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="https://github.com/carlo121603/CoffeeSite" target="_blank" class="text-blue-500 hover:text-blue-700">
+                            <a href="https://github.com/carlo121603/CoffeeSite" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">
                                 <i class="fab fa-github"></i> Code
                             </a>
-                            <a href="https://carlo121603.github.io/CoffeeSite/" target="_blank" class="text-blue-500 hover:text-blue-700">
+                            <a href="https://carlo121603.github.io/CoffeeSite/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">
                                 <i class="fas fa-external-link-alt"></i> Live Demo 
                             </a>
                         </div>
                     </div>
-                </div>
+                </article>
                 
                 <!-- Project 2 -->
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
-                        <!-- <i class="fas fa-calendar-alt text-5xl text-gray-500"></i> -->
-                         <img src="images/hris.png" alt="HRIS">
+                        <img src="images/hris.png" alt="HRIS System by Carlo Untalan" width="400" height="192" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Human Resources Information System</h3>
@@ -461,51 +394,13 @@
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
                         </div>
                         <div class="flex space-x-3">
-                            <!-- <a href="#" class="text-blue-500 hover:text-blue-700">
-                                <i class="fab fa-github"></i> Code
-                            </a> -->
                             <a href="#" class="text-blue-500 hover:text-blue-700">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                    <div class="h-48 bg-gray-300 flex items-center justify-center">
-                        <!-- <i class="fas fa-blog text-5xl text-gray-500"></i> -->
-                         <img src="images/inquiry viewer.png" alt="admin inquiry viewer">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Admin Inquiry Viewer Integration for StandPro</h3>
-                        <p class="text-gray-600 mb-4">
-                            Structured a backend database to store product specifications and reference standards for use in the front-end inquiry form. Integrated this data with the existing system to ensure complete inquiry details such as client info, quotation references, and test specifications are retrieved and displayed accurately in the admin panel.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">MySQL</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">CSS</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Bootstrap</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
-                        </div>
-                        <div class="flex space-x-3">
-                            <!-- <a href="#" class="text-blue-500 hover:text-blue-700">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#" class="text-blue-500 hover:text-blue-700">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a> -->
-                        </div>
-                    </div>
-                </div>
+                </article>
             </div>
-            
-            <!-- <div class="text-center mt-12">
-                <a href="#" class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">
-                    View All Projects
-                </a>
-            </div> -->
         </div>
     </section>
 
@@ -517,10 +412,9 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Certification 1 -->
-                <div class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <article class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
                     <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
-                        <!-- Placeholder for certificate image -->
-                        <img src="images/java certificate.png" alt="Java Foundations" class="max-h-full max-w-full object-contain">
+                        <img src="images/java certificate.png" alt="Java Foundations Certificate" width="300" height="256" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Java Foundations</h3>
@@ -528,13 +422,12 @@
                             Issued by: STI College - June 2022
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Certification 2 -->
-                <div class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <article class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
                     <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
-                        <!-- Placeholder for certificate image -->
-                        <img src="images/sysad certificate.png" alt="System Administration" class="max-h-full max-w-full object-contain">
+                        <img src="images/sysad certificate.png" alt="System Administration Certificate" width="300" height="256" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">System Administration</h3>
@@ -542,13 +435,12 @@
                             Issued by: STI College - June 2022
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Certification 3 -->
-                <div class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <article class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
                     <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
-                        <!-- Placeholder for certificate image -->
-                        <img src="images/css certificate.png" alt="Introduction to CSS" class="max-h-full max-w-full object-contain">
+                        <img src="images/css certificate.png" alt="Introduction to CSS Certificate" width="300" height="256" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Introduction to CSS</h3>
@@ -556,13 +448,12 @@
                             Issued by: Simplilearn - February 2025
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Certification 4 -->
-                <div class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <article class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
                     <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
-                        <!-- Placeholder for certificate image -->
-                        <img src="images/php certificate.jpg" alt="Introduction to PHP" class="max-h-full max-w-full object-contain">
+                        <img src="images/php certificate.jpg" alt="Introduction to PHP Certificate" width="300" height="256" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Introduction to PHP</h3>
@@ -570,13 +461,12 @@
                             Issued by: Simplilearn - February 2025
                         </p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Certification 5 -->
-                <div class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                <article class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
                     <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
-                        <!-- Placeholder for certificate image -->
-                        <img src="images/html certificate.jpg" alt="Introduction to HTML" class="max-h-full max-w-full object-contain">
+                        <img src="images/html certificate.jpg" alt="Introduction to HTML Certificate" width="300" height="256" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Introduction to HTML</h3>
@@ -584,13 +474,12 @@
                             Issued by: Simplilearn - March 2025
                         </p>
                     </div>
-                </div>
+                </article>
 
                  <!-- Certification 6 -->
-                 <div class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+                 <article class="certificate-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
                     <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
-                        <!-- Placeholder for certificate image -->
-                        <img src="images/webdev certificate.png" alt="Web Development for Beginners" class="max-h-full max-w-full object-contain">
+                        <img src="images/webdev certificate.png" alt="Web Development for Beginners Certificate" width="300" height="256" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Web Development for Beginners</h3>
@@ -598,7 +487,7 @@
                             Issued by: Simplilearn - March 2025
                         </p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -650,13 +539,13 @@
                     <div class="mt-8">
                         <h4 class="font-semibold mb-4">Follow Me</h4>
                         <div class="flex space-x-4">
-                            <a href="https://github.com/carlo121603" target="_blank" class="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition">
+                            <a href="https://github.com/carlo121603" target="_blank" rel="noopener noreferrer" class="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition" aria-label="GitHub Profile">
                                 <i class="fab fa-github text-gray-700 hover:text-blue-500"></i>
                             </a>
-                            <a href="www.linkedin.com/in/carlountalan12" target="_blank" class="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition">
+                            <a href="www.linkedin.com/in/carlountalan12" target="_blank" rel="noopener noreferrer" class="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition" aria-label="LinkedIn Profile">
                                 <i class="fab fa-linkedin-in text-gray-700 hover:text-blue-500"></i>
                             </a>
-                            <a href="https://www.facebook.com/carlo.untalan.79/" target="_blank" class="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition">
+                            <a href="https://www.facebook.com/carlo.untalan.79/" target="_blank" rel="noopener noreferrer" class="bg-gray-100 p-3 rounded-full hover:bg-blue-100 transition" aria-label="Facebook Profile">
                                 <i class="fab fa-facebook-f text-gray-700 hover:text-blue-500"></i>
                             </a>
                         </div>
@@ -697,51 +586,15 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
-                    <a href="#" class="text-2xl font-bold">CU.</a>
+                    <a href="#" class="text-2xl font-bold" aria-label="Back to top">CU.</a>
                 </div>
                 <div class="text-center md:text-right">
-                    <!-- <p>&copy;</p> -->
                     <p class="text-gray-400 mt-1">Designed with Tailwind CSS</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            
-            menuToggle.addEventListener('click', function() {
-                mobileMenu.classList.toggle('active');
-                menuIcon.classList.toggle('fa-bars');
-                menuIcon.classList.toggle('fa-times');
-                menuIcon.classList.toggle('hamburger');
-                menuIcon.classList.toggle('active');
-            });
-            
-            // Close menu when clicking on a link
-            document.querySelectorAll('#mobile-menu a').forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.remove('active');
-                    menuIcon.classList.add('fa-bars');
-                    menuIcon.classList.remove('fa-times');
-                    menuIcon.classList.add('hamburger');
-                    menuIcon.classList.remove('active');
-                });
-            });
-            
-            // Smooth scrolling for all anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

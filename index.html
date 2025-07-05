@@ -48,7 +48,9 @@
     <!-- Navigation -->
     <nav class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-800" aria-label="Carlo Untalan Portfolio Home">CU.</a>
+            <a href="#" class="focus:outline-none focus:ring-0" aria-label="Carlo Untalan Portfolio Home">
+                <img src="Pictures/Logo.png" alt="Carlo Untalan Logo" class="h-10 w-auto">
+              </a>
             <div class="hidden md:flex space-x-8">
                 <a href="#home" class="nav-link text-gray-800 hover:text-blue-500 focus:outline-none focus:ring-0 active:outline-none">Home</a>
                 <a href="#about" class="nav-link text-gray-800 hover:text-blue-500 focus:outline-none focus:ring-0 active:outline-none">About</a>
@@ -250,9 +252,89 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-12">My <span class="text-blue-500">Experiences & Projects</span></h2>
             
+            <!-- Learning Roadmap Section -->
+            <div class="mb-16 bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-6 text-center">My Learning Roadmap</h3>
+                
+                <div class="relative">
+                    <!-- Timeline line -->
+                    <div class="absolute left-1/2 h-full w-1 bg-blue-200 transform -translate-x-1/2"></div>
+                    
+                    <!-- Roadmap Items -->
+                    <div class="space-y-8">
+                        <!-- Current Focus -->
+                        <div class="relative flex items-center">
+                            <div class="absolute left-1/2 -ml-3 w-6 h-6 bg-blue-500 rounded-full transform -translate-x-1/2"></div>
+                            <div class="w-1/2 pr-8 text-right">
+                                <h4 class="font-bold text-lg">Current Focus</h4>
+                                <p class="text-gray-600">Mastering PHP fundamentals</p>
+                            </div>
+                            <div class="w-1/2 pl-8">
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <i class="fas fa-check-circle text-blue-500 mr-1"></i> Building projects with core PHP
+                                        <br>
+                                        <i class="fas fa-check-circle text-blue-500 mr-1"></i> Deepening MySQL knowledge
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Next Steps -->
+                        <div class="relative flex items-center">
+                            <div class="absolute left-1/2 -ml-3 w-6 h-6 bg-blue-400 rounded-full transform -translate-x-1/2"></div>
+                            <div class="w-1/2 pr-8 text-right">
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <i class="fas fa-arrow-right text-blue-500 mr-1"></i> Learning PHP frameworks (Laravel)
+                                        <br>
+                                        <i class="fas fa-arrow-right text-blue-500 mr-1"></i> Advanced JavaScript concepts
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-1/2 pl-8">
+                                <h4 class="font-bold text-lg">Next Steps</h4>
+                                <p class="text-gray-600">Expanding to frameworks</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Future Goals -->
+                        <div class="relative flex items-center">
+                            <div class="absolute left-1/2 -ml-3 w-6 h-6 bg-blue-300 rounded-full transform -translate-x-1/2"></div>
+                            <div class="w-1/2 pr-8 text-right">
+                                <h4 class="font-bold text-lg">Future Goals</h4>
+                                <p class="text-gray-600">Full-stack development & DevOps / Cloud Engineer</p>
+                            </div>
+                            <div class="w-1/2 pl-8">
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <i class="fas fa-star text-blue-500 mr-1"></i> React.js for frontend
+                                        <br>
+                                        <i class="fas fa-star text-blue-500 mr-1"></i> Node.js backend development
+                                        <br>
+                                        <i class="fas fa-star text-blue-500 mr-1"></i> API integration
+                                        <br>
+                                        <i class="fas fa-star text-blue-500 mr-1"></i> CI/CD
+                                        <br>
+                                        <i class="fas fa-star text-blue-500 mr-1"></i> Containerization
+                                        <br>
+                                        <i class="fas fa-star text-blue-500 mr-1"></i> Deployment
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600 italic">Committed to be a life-long learner in this ever-evolving world of technology.</p>
+                </div>
+            </div>
+            
+            <!-- Projects Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                 <!-- Project 1 -->
+                 <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
                         <img src="images/g&b.png" alt="Online Lending Platform by Carlo Untalan" width="400" height="192" loading="lazy">
                     </div>
@@ -343,7 +425,7 @@
                             <a href="https://github.com/carlo121603/Expense-Tracker" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">
                                 <i class="fab fa-github"></i> Code
                             </a>
-                            <a href="#" class="text-blue-500 hover:text-blue-700">
+                            <a href="http://expense-tracker01.free.nf/" target="_blank" class="text-blue-500 hover:text-blue-700">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
                         </div>
@@ -376,7 +458,7 @@
                     </div>
                 </article>
                 
-                <!-- Project 2 -->
+                
                 <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
                         <img src="images/hris.png" alt="HRIS System by Carlo Untalan" width="400" height="192" loading="lazy">
@@ -397,6 +479,29 @@
                             <a href="#" class="text-blue-500 hover:text-blue-700">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center">
+                        <img src="images/myfitness.png" alt="HRIS System by Carlo Untalan" width="400" height="192" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Fitness Web-based Application</h3>
+                        <p class="text-gray-600 mb-4">
+                            Developing a personalized web-based fitness application designed to help users achieve their health goals through structured workout routines, goal tracking, and tailored recommendations.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">MySQL</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Tailwind</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <!-- <a href="#" class="text-blue-500 hover:text-blue-700">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a> -->
                         </div>
                     </div>
                 </article>
@@ -581,20 +686,36 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-black text-white py-8">
+   <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 relative">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <a href="#" class="text-2xl font-bold" aria-label="Back to top">CU.</a>
+                <div class="mb-4 md:mb-0 text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-2">Carlo Untalan</h3>
+                    <p class="text-gray-400">Software Developer</p>
                 </div>
-                <div class="text-center md:text-right">
-                    <p class="text-gray-400 mt-1">Designed with Tailwind CSS</p>
+                
+                <div class="flex space-x-6 mb-4 md:mb-0 mt-5">
+                    <p>
+                        "I can do all things through Christ who strengthens me." — Philippians 4:13
+                    </p>
                 </div>
+                
+                <!-- <div class="text-center md:text-right">
+                    <p class="text-gray-400">&copy; <span id="current-year"></span> Carlo Untalan. All rights reserved.</p>
+                    <p class="text-gray-500 text-sm mt-1">Built with Tailwind CSS</p>
+                </div> -->
             </div>
         </div>
+
+        <!-- Scroll to Top Button -->
+        <button id="scroll-to-top" class="fixed bottom-14 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition opacity-0 invisible focus:outline-none focus:ring-2 focus:ring-blue-300" aria-label="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </footer>
 
+
+    <script src="scrollbutton.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

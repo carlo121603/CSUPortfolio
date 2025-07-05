@@ -16,8 +16,11 @@
     <link rel="canonical" href="https://carlo121603.github.io/CrlUntlnPortfolio/" />
     
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="Style/style.css">
     
     <!-- Structured data for better search engine understanding -->
     <script type="application/ld+json">
@@ -90,9 +93,9 @@
                 </div>                
             </div>
             <div class="md:w-1/2 flex justify-center">
-                <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-200 rounded-full overflow-hidden border-4 border-blue-500">
+                <div class="w-72 h-72 md:w-96 md:h-96 bg-gray-200 rounded-full overflow-hidden border-4 border-blue-500">
                     <div class="w-full h-full bg-gray-300 flex items-center justify-center">
-                        <img src="Pictures/Profile.JPG" alt="Carlo Untalan - Software Developer" width="320" height="320" loading="lazy">
+                        <img src="Pictures/Profile.JPG" alt="Carlo Untalan - Software Developer" width="320" height="320" loading="lazy" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
@@ -187,6 +190,15 @@
                             <i class="fab fa-github-alt mr-2"></i>
                             <span>Github</span>
                         </div>
+                        <div class="skill-tag bg-[#F24E1E] text-white px-4 py-2 rounded-lg flex items-center">
+                            <i class="fab fa-figma text-white text-xl mr-2"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-tag bg-[#007ACC] text-white px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-code text-white text-lg mr-2"></i>
+                            <span>VS Code</span>
+                        </div>
+                          
                     </div>
                 </div>
                 
@@ -262,6 +274,26 @@
                     
                     <!-- Roadmap Items -->
                     <div class="space-y-8">
+                        <!-- College Foundations -->
+                        <div class="relative flex items-center">
+                            <div class="absolute left-1/2 -ml-3 w-6 h-6 bg-blue-600 rounded-full transform -translate-x-1/2"></div>
+                            <div class="w-1/2 pr-8 text-right">
+                                <h4 class="font-bold text-lg">College Foundations</h4>
+                                <p class="text-gray-600">Object-Oriented Programming</p>
+                            </div>
+                            <div class="w-1/2 pl-8">
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <p class="text-sm text-gray-700">
+                                        <i class="fas fa-graduation-cap text-blue-500 mr-1"></i> Java OOP concepts
+                                        <br>
+                                        <i class="fas fa-graduation-cap text-blue-500 mr-1"></i> C# Event-Driven Programming
+                                        <br>
+                                        <i class="fas fa-graduation-cap text-blue-500 mr-1"></i> Data Structures & Algorithms
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <!-- Current Focus -->
                         <div class="relative flex items-center">
                             <div class="absolute left-1/2 -ml-3 w-6 h-6 bg-blue-500 rounded-full transform -translate-x-1/2"></div>
@@ -275,6 +307,8 @@
                                         <i class="fas fa-check-circle text-blue-500 mr-1"></i> Building projects with core PHP
                                         <br>
                                         <i class="fas fa-check-circle text-blue-500 mr-1"></i> Deepening MySQL knowledge
+                                        <br>
+                                        <i class="fas fa-check-circle text-blue-500 mr-1"></i> Web development basics
                                     </p>
                                 </div>
                             </div>
@@ -289,6 +323,8 @@
                                         <i class="fas fa-arrow-right text-blue-500 mr-1"></i> Learning PHP frameworks (Laravel)
                                         <br>
                                         <i class="fas fa-arrow-right text-blue-500 mr-1"></i> Advanced JavaScript concepts
+                                        <br>
+                                        <i class="fas fa-arrow-right text-blue-500 mr-1"></i> RESTful API development
                                     </p>
                                 </div>
                             </div>
@@ -310,15 +346,15 @@
                                     <p class="text-sm text-gray-700">
                                         <i class="fas fa-star text-blue-500 mr-1"></i> React.js for frontend
                                         <br>
-                                        <i class="fas fa-star text-blue-500 mr-1"></i> Node.js backend development
+                                        <i class="fas fa-star text-blue-500 mr-1"></i> Laravel or Node.js for backend
                                         <br>
                                         <i class="fas fa-star text-blue-500 mr-1"></i> API integration
                                         <br>
                                         <i class="fas fa-star text-blue-500 mr-1"></i> CI/CD
                                         <br>
-                                        <i class="fas fa-star text-blue-500 mr-1"></i> Containerization
+                                        <i class="fas fa-star text-blue-500 mr-1"></i> Containerization (Docker)
                                         <br>
-                                        <i class="fas fa-star text-blue-500 mr-1"></i> Deployment
+                                        <i class="fas fa-star text-blue-500 mr-1"></i> Cloud deployment (AWS/Azure)
                                     </p>
                                 </div>
                             </div>
@@ -327,7 +363,7 @@
                 </div>
                 
                 <div class="mt-8 text-center">
-                    <p class="text-gray-600 italic">Committed to be a life-long learner in this ever-evolving world of technology.</p>
+                    <p class="text-gray-600 italic">Building on my college foundations in Java and C# to become a full-stack developer.</p>
                 </div>
             </div>
             
@@ -339,7 +375,8 @@
                         <img src="images/g&b.png" alt="Online Lending Platform by Carlo Untalan" width="400" height="192" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Online Lending Platform (Capstone Project)</h3>
+                        <h3 class="text-xl font-semibold mb-2">Online Lending Platform</h3>
+                        <h5 class="text-sm font-semibold mb-2 text-gray-700">Capstone Project</h5>
                         <p class="text-gray-600 mb-4">
                             Collaborated with <a href="https://www.facebook.com/nclnncvs" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">Nicole Cuevas</a> to create a full-featured online lending platform built with Wordpress and customized php, javascript, and css codes.
                         </p>
@@ -364,6 +401,7 @@
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">E-Commerce Website</h3>
+                        <h5 class="text-sm font-semibold mb-2 text-gray-700">Internship Experience</h5>
                         <p class="text-gray-600 mb-4">
                             A sleek and responsive e-commerce platform built during my internship using PHP, MySQL, JavaScript, CSS, and Bootstrap featuring a product catalog, pagination, and intuitive user interface.
                         </p>
@@ -388,6 +426,7 @@
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Custom Admin Panel for EBI Sub-Navigation</h3>
+                        <h5 class="text-sm font-semibold mb-2 text-gray-700">Internship Experience</h5>
                         <p class="text-gray-600 mb-4">
                             Developed a dynamic admin portal for <a href="https://neuralcoredev.com/EBI/act.php" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">EBI's</a> website, enabling real-time management of Career and Bulletin sub-navigation menus.
                         </p>
@@ -412,8 +451,9 @@
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Expense Tracker</h3>
+                        <h5 class="text-sm font-semibold mb-2 text-gray-700">Personal Project</h5>
                         <p class="text-gray-600 mb-4">
-                            A streamlined expense tracker application developed for personal use in automating the recording and management of monthly bills.
+                            A streamlined expense tracker application, use in automating the recording and management of monthly bills.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
@@ -438,6 +478,7 @@
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">A Coffee Shop Website</h3>
+                        <h5 class="text-sm font-semibold mb-2 text-gray-700">Personal Project</h5>
                         <p class="text-gray-600 mb-4">
                             Developed a simple responsive landing page for a fictional coffee shop to enhance front-end design skills, focusing on layout, visual hierarchy, and user experience.
                         </p>
@@ -458,13 +499,65 @@
                     </div>
                 </article>
                 
-                
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center relative overflow-hidden">
+                        <!-- Carousel Container -->
+                        <div class="carousel relative w-full h-full">
+                            <!-- Image 1 (active by default) -->
+                            <div class="carousel-item absolute w-full h-full flex items-center justify-center transition-opacity duration-300 opacity-100 active" data-index="0">
+                                <div class="w-full h-full bg-blue-400 flex items-center justify-center text-white text-lg font-bold">
+                                    <img src="images/Standpro.png" alt="Standpro">
+                                </div>
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="carousel-item absolute w-full h-full flex items-center justify-center transition-opacity duration-300 opacity-0" data-index="1">
+                                <div class="w-full h-full bg-green-400 flex items-center justify-center text-white text-lg font-bold">
+                                    <img src="images/7.png" alt="Standpro">
+                                </div>
+                            </div>
+                            <!-- Image 3 -->
+                            <div class="carousel-item absolute w-full h-full flex items-center justify-center transition-opacity duration-300 opacity-0" data-index="2">
+                                <div class="w-full h-full bg-red-400 flex items-center justify-center text-white text-lg font-bold">
+                                    <img src="images/inquiry viewer.png" alt="Standpro">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Carousel Indicators - Now properly positioned at bottom center -->
+                        <div class="carousel-indicators">
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-white bg-opacity-100 hover:bg-opacity-100 transition border border-gray-300" data-index="0"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition border border-gray-300" data-index="1"></button>
+                            <button class="carousel-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition border border-gray-300" data-index="2"></button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Admin Inquiry Viewer Integration for StandPro</h3>
+                        <h5 class="text-sm font-semibold mb-2 text-gray-700">Internship Experience</h5>
+                        <p class="text-gray-600 mb-4">
+                            Structured a backend database to store product specifications and reference standards for use in the front-end inquiry form. Integrated this data with the existing system to ensure complete inquiry details such as client info, quotation references, and test specifications are retrieved and displayed accurately in the admin panel.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">MySQL</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">jQuery</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">AJAX</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-500 hover:text-blue-700">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
                 <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
                         <img src="images/hris.png" alt="HRIS System by Carlo Untalan" width="400" height="192" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Human Resources Information System</h3>
+                        <h5 class="text-sm font-semibold mb-2 text-gray-700">Internship Experience</h5>
                         <p class="text-gray-600 mb-4">
                             Developing a comprehensive HRIS solution for Neuralcore Company that streamlines employee management, attendance tracking, and performance evaluation.
                         </p>
@@ -485,10 +578,38 @@
 
                 <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
                     <div class="h-48 bg-gray-300 flex items-center justify-center">
-                        <img src="images/myfitness.png" alt="HRIS System by Carlo Untalan" width="400" height="192" loading="lazy">
+                        <img src="images/firstportfolio.png" alt="First Portfolio" width="400" height="192" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">First Web Portfolio</h3>
+                        <h5 class="text-sm font-semibold mb-2 text-gray-700">Personal Project</h5>
+                        <p class="text-gray-600 mb-4">
+                            Developed my first ever porftolio.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">MySQL</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Tailwind</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/carlo121603/UntalanPortfolio" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://carlo121603.github.io/UntalanPortfolio/" target="_blank" class="text-blue-500 hover:text-blue-700">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center">
+                        <img src="images/myfitness.png" alt="Fitness Web App" width="400" height="192" loading="lazy">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Fitness Web-based Application</h3>
+                        <h5 class="text-sm font-semibold mb-2 text-gray-700">Personal Project</h5>
                         <p class="text-gray-600 mb-4">
                             Developing a personalized web-based fitness application designed to help users achieve their health goals through structured workout routines, goal tracking, and tailored recommendations.
                         </p>
@@ -714,8 +835,8 @@
         </button>
     </footer>
 
-
-    <script src="scrollbutton.js"></script>
-    <script src="script.js"></script>
+    <script src="Scripts/scrollbutton.js"></script>
+    <script src="Scripts/carousel.js"></script>
+    <script src="Scripts/script.js"></script>
 </body>
 </html>
